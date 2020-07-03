@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Today's Missions</title>
+    <link rel="stylesheet" href="assets/styles/app.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Muli:ital,wght@0,400;1,200;1,900&display=swap" rel="stylesheet">    <script src="assets/scripts/msg-box.js" defer></script>
+    <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap" rel="stylesheet">
+
+    <script src="assets/scripts/app.js" defer></script>
+  </head>
+  <body>
+    <template id="task-hub">
+      <div class="task-hub">
+        <h3></h3>
+        <img src="" alt="" class="flag" />
+        <input class="check" type="checkbox" />
+        <button >X</button>
+        <p></p>
+        <div class="category-hub">
+          <span class="category hidden"></span>
+          <span class="category hidden"></span>
+          <span class="category hidden"></span>
+          <span class="category hidden"></span>
+          <span class="category hidden"></span>
+          <span class="category hidden"></span>
+        </div>
+      </div>
+    </template>
+    <header>
+      <h1>Determine Today's Missions</h1>
+    </header>
+    <main>
+      <section id="section-form" class="">
+        <form action="" id="section-form__form">
+          <div class="flex-row" id="section-form__head">
+            <div class="flex-cl" id="div-title">
+              <label for="section-form__title">Title:</label>
+              <input type="text" name="" id="section-form__title" />
+            </div>
+            <div class="flex-cl">
+              <label for="section-form__flag">Flag:</label>
+              <select name="form-flags" id="section-form__flag">
+                <option value="default" selected disabled>Select a flag</option>
+                <option value="nice-to-do">Nice to Do</option>
+                <option value="important">Important</option>
+                <option value="very-important">Very Important</option>
+              </select>
+            </div>
+            <div class="flex-cl" id="div-color">
+              <label for="section-form__color">Color:</label>
+              <input
+                type="color"
+                name=""
+                id="section-form__color"
+                value="#ffffff"
+              />
+            </div>
+          </div>
+          <textarea
+            name="detail"
+            id="section-form__detail"
+            cols="30"
+            rows="10"
+            placeholder="Please add details for the task if necessary!"
+          ></textarea>
+          <div id="section-form__category" class="flex-row">
+            <div>
+              <input type="checkbox" id="personal" name="task-category" />
+              <label for="personal">Personal Development</label>
+            </div>
+            <div>
+              <input type="checkbox" id="career" name="task-category" />
+              <label for="career">Career Development</label>
+            </div>
+            <div>
+              <input type="checkbox" id="physical" name="task-category" />
+              <label for="physical">Physical Development</label>
+            </div>
+            <div>
+              <input type="checkbox" id="fun" name="task-category" />
+              <label for="fun">Fun To Do</label>
+            </div>
+            <div>
+              <input type="checkbox" id="brain" name="task-category" />
+              <label for="brain">Good for Brain</label>
+            </div>
+            <div>
+              <input type="checkbox" id="executive" name="task-category" />
+              <label for="executive">Executive Time</label>
+            </div>
+          </div>
+          <button type="submit" id="section-form__submit">
+            Submit the Task
+          </button>
+          <button id="section-form__seal" type="button">Seal the Day</button>
+        </form>
+      </section>
+      <section id="section-progress">
+        <progress max="" value=""></progress>
+        <span></span> <!-- progress text will be added -->
+      </section>
+
+      <section id="section-tasks-active">
+        <!-- template will be added -->
+      </section>
+
+      <section id="section-tasks-passive">
+        <!-- template will be added -->
+      </section>
+    </main>
+  </body>
+</html>
